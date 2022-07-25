@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import
+import Button from '@mui/material/Button';
 
 interface ExampleComponentProps {
   foo: string;
@@ -9,6 +9,6 @@ export const ExampleComponent: FunctionComponent<ExampleComponentProps> = ({
   foo
 }) => {
   return (
-    <h1>{foo}</h1>
+    <Button variant="contained">{foo}</Button>
   );
 }
