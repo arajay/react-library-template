@@ -10,7 +10,7 @@ export default {
   },
   // https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    foo: {
+    text: {
       control: 'text',
     },
     onClick: {
@@ -24,11 +24,11 @@ const Template: ComponentStory<typeof ExampleComponent> = (args) => <ExampleComp
 export const Component = Template.bind({});
 // set default value for props
 Component.args = {
-  foo: 'bar'
+  text: 'bar'
 }
 
 // alternate version of same component
 export const ComponentAlt = Template.bind({});
 ComponentAlt.args = {
-  foo: 'baz'
+  text: 'baz'
 }

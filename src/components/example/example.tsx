@@ -2,15 +2,15 @@ import { FunctionComponent } from 'react';
 import Button from '@mui/material/Button';
 
 interface ExampleComponentProps {
-  foo: string;
+  text: string;
   onClick: () => void;
 }
 
 export const ExampleComponent: FunctionComponent<ExampleComponentProps> = ({
-  foo,
+  text,
   onClick,
 }) => {
   return (
-    <Button onClick={onClick} variant="contained">{foo}</Button>
+    <Button onClick={onClick} variant="contained">{text}</Button>
   );
 }
