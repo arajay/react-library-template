@@ -1,2 +1,2 @@
 # mui-starter
-React project starter template preconfigured with Typescript, MUI, Theming, Testing and Storybook
+React library starter template preconfigured with MUI components, Theming, Typescript, Unit Testing and Storybook
