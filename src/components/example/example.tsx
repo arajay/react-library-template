@@ -3,12 +3,14 @@ import Button from '@mui/material/Button';
 
 interface ExampleComponentProps {
   foo: string;
+  onClick: () => void;
 }
 
 export const ExampleComponent: FunctionComponent<ExampleComponentProps> = ({
-  foo
+  foo,
+  onClick,
 }) => {
   return (
-    <Button variant="contained">{foo}</Button>
+    <Button onClick={onClick} variant="contained">{foo}</Button>
   );
 }

@@ -13,6 +13,9 @@ export default {
     foo: {
       control: 'text',
     },
+    onClick: {
+      action: 'clicked',
+    }
   }
 }
 
