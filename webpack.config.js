@@ -28,11 +28,10 @@ module.exports = {
   },
   plugins: [
     // faster type checker
-    new ForkTsCheckerWebpackPlugin();
+    new ForkTsCheckerWebpackPlugin(),
     // linting
     new ESLintPlugin({
       extensions: ['.ts', '.tsx', '.js'],
-      exclude: /node_modules/,
       fix: true,
     })
   ]
