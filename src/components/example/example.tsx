@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import Button from '@mui/material/Button';
 
-interface ExampleComponentProps {
+export interface ExampleComponentProps {
   text: string;
   onClick: () => void;
 }

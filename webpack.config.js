@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -7,6 +8,12 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    library: {
+      type: 'commonjs'
+    }
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   module: {
     rules: [
@@ -23,9 +30,7 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js']
-  },
+  devtool: 'source-map',
   plugins: [
     // faster type checker
     new ForkTsCheckerWebpackPlugin(),
