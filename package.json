@@ -1,6 +1,6 @@
 {
   "name": "mui-starter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React library starter template preconfigured with MUI components, Theming, Typescript, Unit Testing and Storybook",
   "author": "RJ Greenhalge",
   "license": "MIT",
@@ -19,29 +19,31 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "start-storybook -p 6006",
+    "start": "storybook dev -p 6006",
     "build": "rm -rf ./dist && webpack --mode=production",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@mui/material": "^5.9.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.9",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack5": "^6.5.9",
-    "@storybook/manager-webpack5": "^6.5.9",
-    "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@storybook/addon-actions": "^7.0.0-beta.29",
+    "@storybook/addon-essentials": "^7.0.0-beta.29",
+    "@storybook/addon-interactions": "^7.0.0-beta.29",
+    "@storybook/addon-links": "^7.0.0-beta.29",
+    "@storybook/react": "^7.0.0-beta.29",
+    "@storybook/react-webpack5": "^7.0.0-beta.29",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.6",
@@ -49,14 +51,20 @@
     "@typescript-eslint/parser": "^5.30.7",
     "babel-loader": "^8.2.5",
     "babel-plugin-direct-import": "^1.0.0",
+    "eslint": "^8.31.0",
+    "eslint-plugin-storybook": "^0.6.10",
     "eslint-webpack-plugin": "^3.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "storybook": "^7.0.0-beta.29",
     "ts-jest": "^28.0.7",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
+  },
+  "overrides": {
+    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.2"
   }
 }
