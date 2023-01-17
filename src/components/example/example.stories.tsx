@@ -1,4 +1,4 @@
-import { ComponentStory } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { ExampleComponent } from './example';
 
 export default {
@@ -19,7 +19,7 @@ export default {
   }
 }
 
-const Template: ComponentStory<typeof ExampleComponent> = (args) => <ExampleComponent {...args} />;
+const Template: StoryFn<typeof ExampleComponent> = (args) => <ExampleComponent {...args} />;
 
 export const Component = Template.bind({});
 // set default value for props
