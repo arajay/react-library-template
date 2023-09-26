@@ -1,3 +1,6 @@
+# os system files
+.DS_STORE
+
 # Builds
 dist
 storybook-static

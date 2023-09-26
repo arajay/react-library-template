@@ -1,6 +1,6 @@
 import { cleanup, render, RenderResult, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { ExampleComponent } from './example';
+import { ExampleComponent } from './example.component';
 
 describe('The ExampleComponent', () => {
 
@@ -21,7 +21,7 @@ describe('The ExampleComponent', () => {
     el = screen.getByRole('button') as HTMLButtonElement;
   });
 
-  // sometimes needed to prevent memory leak 
+  // sometimes needed to prevent memory leak
   afterEach(cleanup);
 
   it('should be', () => {
