@@ -36,7 +36,7 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     // linting
     new ESLintPlugin({
-      extensions: ['.ts', '.tsx', '.js'],
+      extensions: ['.ts', '.tsx', '.js', '.mdx'],
       fix: true,
     })
   ]
