@@ -1,23 +1,23 @@
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-import React from 'react';
-import type { Preview } from '@storybook/react';
-import {createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-import { customTheme } from '../src/theme/customTheme';
+import React from 'react'
+import type { Preview } from '@storybook/react'
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material'
+import { customTheme } from '../src/theme/customTheme'
 
 /**
 ***  add theme controls to storybook
 **/
-
 // define empty theme object for MUI default theme
-const defaultTheme = createTheme({});
+const defaultTheme = createTheme({})
 
-// define theme object for select options
+// define object for storybook theme select options
 export const themes = {
   default: defaultTheme,
-  custom: customTheme
-  // add more themes here
+  custom: customTheme,
+  // foo: barTheme
 }
 
+// define a global storybook UI element for theme selection
 export const globalTypes = {
   theme: {
     name: 'Theme',
@@ -50,5 +50,5 @@ const preview: Preview = {
       },
     },
   },
-};
-export default preview;
+}
+export default preview
