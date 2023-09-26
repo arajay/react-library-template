@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { ExampleComponent } from './example.component';
+import type { Meta, StoryObj } from '@storybook/react'
+import { ExampleComponent } from './example.component'
 
 const meta: Meta<typeof ExampleComponent> = {
   title: 'Components/Example',
@@ -22,6 +22,6 @@ const meta: Meta<typeof ExampleComponent> = {
   }
 }
 
-export default meta;
+export default meta
 
 export const Example: StoryObj<typeof ExampleComponent> = {}

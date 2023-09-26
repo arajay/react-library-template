@@ -1,5 +1,5 @@
-import { FunctionComponent } from 'react';
-import Button from '@mui/material/Button';
+import { FunctionComponent } from 'react'
+import Button from '@mui/material/Button'
 
 export interface ExampleComponentProps {
   text: string;
@@ -12,5 +12,5 @@ export const ExampleComponent: FunctionComponent<ExampleComponentProps> = ({
 }) => {
   return (
     <Button onClick={onClick} variant="contained">{text}</Button>
-  );
+  )
 }
