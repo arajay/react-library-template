@@ -1,3 +1,4 @@
+/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 import React from 'react';
 import type { Preview } from '@storybook/react';
 import {createTheme, CssBaseline, ThemeProvider } from '@mui/material';
