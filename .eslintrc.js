@@ -10,7 +10,7 @@ module.exports = {
       jsx: true // Allows for the parsing of JSX
     }
   },
-
+  ignorePatterns: ['!.storybook'],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
   },
